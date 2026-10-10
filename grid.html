@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+          *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+        body{
+            min-height:100vh;
+            width:100%;
+             background-color: #f0f0f0;
+        }
+         .grid {
+            height:100vh;   
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.box { 
+    background-color: aquamarine;
+    border: 2px solid black;
+     }
+.box1 {
+    grid-column-start: 1;
+    grid-column-end:3;
+    background: #f0f0f0;
+     }
+.box2 {
+    background: aqua;
+    grid-row-start:2 ;
+    grid-row-end:4 ;
+ }
+.box3 { grid-area: 1 / 2 / 4 / 4; }
+.box4 { grid-area: 4 / 2 / 6 / 3; }
+.box5 { grid-area: 5 / 1 / 6 / 2; }
+.box6 { grid-area: 4 / 3 / 6 / 5; }
+.box7 { grid-area: 1 / 4 / 4 / 5; }
+.box8 { grid-area: 3 / 5 / 6 / 6; }
+.box9 { grid-area: 1 / 5 / 3 / 6; }
+
+    </style>    
+</head>
+<body>
+    <div class="grid">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>
